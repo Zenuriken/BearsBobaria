@@ -1,0 +1,50 @@
+html, body {
+      	background: #000000;
+      	width: 100%;
+      	height: 100%;
+      	overflow: visible;
+      	padding: 0;
+      	margin: 0;
+    }
+
+      div#gameContainer {
+      	background: transparent !important;
+      	position: absolute;
+      }
+
+      div#gameContainer canvas {
+      	position: absolute;
+      }
+
+      div#gameContainer canvas[data-pixel-art="true"] {
+      	position: absolute;
+      	image-rendering: optimizeSpeed;
+      	image-rendering: -webkit-crisp-edges;
+      	image-rendering: -moz-crisp-edges;
+      	image-rendering: -o-crisp-edges;
+      	image-rendering: crisp-edges;
+      	image-rendering: -webkit-optimize-contrast;
+      	image-rendering: optimize-contrast;
+      	image-rendering: pixelated;
+      	-ms-interpolation-mode: nearest-neighbor;
+      }
+
+      input[type="text"] {
+      	/* enlarge by 16/12 = 133.33% */
+      	border-radius: 6.666666667px;
+      	font-size: 16px;
+      	line-height: 26.666666667px;
+      	padding: 6.666666667px;
+      	width: 133.333333333%;
+      	/* scale down by 12/16 = 75% */
+      	transform: scale(0.75);
+      	transform-origin: left top;
+      	/* remove extra white space */
+      	margin-bottom: -10px;
+      	margin-right: -33.333333333%;
+      }
+
+	  #unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+	  #unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
+	  #unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
+	  #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
